@@ -1,112 +1,94 @@
-# 📊 Meta Ads Performance Analysis Dashboard (Power BI)
+# 📊 Ad Performance Analysis (Python EDA + Power BI Dashboard)
 
-## 📌 Project Overview
-This project presents a **Meta (Facebook & Instagram) Ads Performance Analysis Dashboard** built using **Power BI**. The dashboard provides actionable insights into digital marketing performance by tracking impressions, clicks, engagement, conversions, purchases, and budget utilization across platforms.
+## Project Overview
+This project analyzes **digital advertising performance** across platforms (Facebook & Instagram) using **Python for Exploratory Data Analysis (EDA)** and **Power BI for interactive dashboards**.
 
-This project demonstrates strong skills in:
-- Data modeling & DAX
-- KPI creation
-- Interactive dashboard design
-- Marketing analytics
+The goal is to understand **campaign effectiveness, audience engagement, and conversion behavior** and present insights that support **data-driven marketing decisions**.
 
-This is a **portfolio-ready project** for Data Analyst / Business Analyst roles.
+The dashboard is divided into **three main sections**:
 
 ---
 
-## 🎯 Business Objective
-The objective of this project is to:
-- Monitor ad campaign performance
-- Compare Facebook vs Instagram metrics
-- Identify high-performing audience segments
-- Track engagement and conversion trends
-- Support data-driven marketing decisions
+## 1️⃣ Campaign Overview
+- Total impressions, clicks, engagement, and purchases
+- Click Through Rate (CTR), Engagement Rate, Conversion Rate
+- Total budget and average budget spent
+- Platform-wise comparison (Facebook vs Instagram)
 
 ---
 
-## 🛠️ Tools & Technologies
-- **Power BI Desktop**
-- **DAX (Data Analysis Expressions)**
-- **Power Query**
-- **Excel / CSV (Data Source)**
-
----
-
-## 📂 Dataset Description
-The dataset contains Meta Ads data with the following attributes:
-- Platform (Facebook / Instagram)
-- Impressions
-- Clicks
-- Shares
-- Comments
-- Engagement
-- Purchases
-- Budget
-- Gender
-- Age
-- Country
-- Event Hours
-- Ad Type (Image, Video, Carousel, Stories)
-
----
-
-## 📊 Key KPIs
-- Impressions  
-- Clicks  
-- Shares  
-- Comments  
-- Engagement  
-- Purchases  
-- Click Through Rate (CTR)  
-- Engagement Rate  
-- Conversion Rate  
-- Purchase Rate  
-- Total Budget  
-- Average Budget  
-
----
-
-## 📈 Dashboard Features
-
-### 🔹 Platform-wise Analysis
-- Separate report pages for **Facebook** and **Instagram**
-- Easy comparison of performance metrics across platforms
-
-### 🔹 Audience Insights
-- Comments by **Gender** (Donut Chart)
-- Comments by **Age Group** (Bar Chart)
-- Comments by **Country** (Map Visual)
-
-### 🔹 Time-Based Analysis
-- Weekly comments trend
+## 2️⃣ Audience & Engagement Analysis
+- Engagement and comments by gender
+- Engagement by age group
+- Country-wise engagement distribution
+- Weekly engagement and comments trends
 - Engagement by event hours
-- Monthly calendar heatmap
-
-### 🔹 Ad Type Performance
-- Image Ads
-- Video Ads
-- Carousel Ads
-- Stories
-
-### 🔹 Interactive Filters
-- Platform slicer
-- Metric selector
-- Month filter
 
 ---
 
-## 🧠 Data Modeling & DAX
-Key measures created using DAX:
-- **CTR** = Clicks / Impressions
-- **Engagement Rate** = Engagement / Impressions
-- **Conversion Rate** = Purchases / Clicks
-- **Purchase Rate** = Purchases / Impressions
-- Dynamic KPI titles using DAX
-
-The data model follows a **star schema** with fact and dimension tables.
+## 3️⃣ Ad Performance Analysis
+- Performance comparison by ad type (Image, Video, Carousel, Stories)
+- Engagement and comments trends over time
+- Purchase and conversion behavior analysis
+- Identification of high-performing ad formats
 
 ---
-## 🚀 Key Insights
-- Instagram shows higher engagement compared to Facebook
-- Video ads generate more comments and engagement
+
+## 🛠️ Tools & Technologies Used
+- **Python (Jupyter Notebook)** – Exploratory Data Analysis (EDA)  
+  - pandas, numpy  
+  - matplotlib, seaborn  
+- **Power BI** – Dashboard creation & visualization  
+- **DAX** – KPI calculations and dynamic measures  
+- **Excel / CSV** – Data cleaning and preprocessing  
+
+---
+
+## 🔍 Exploratory Data Analysis (Python)
+EDA was performed in **Jupyter Notebook** to understand data patterns before building the dashboard.
+
+### EDA Activities:
+- Data loading and inspection
+- Handling missing values
+- Data type corrections
+- Summary statistics
+- Platform-wise performance comparison
+- Distribution analysis (age, engagement, comments)
+- Correlation analysis between clicks, engagement, and purchases
+- Outlier detection
+
+### Key EDA Insights:
+- Instagram has higher engagement compared to Facebook
+- Video ads consistently generate more interactions
 - Engagement peaks during evening hours
-- Certain age groups drive higher interaction
+- Certain age groups drive higher conversions
+- Strong correlation between clicks and purchases
+
+---
+
+## 📊 Important Charts Used
+- **KPI Cards** – Impressions, Clicks, Engagement, Purchases, Budget, Rates
+- **Donut Chart** – Gender-wise engagement distribution
+- **Bar Chart** – Engagement by age group and ad type
+- **Line Chart** – Weekly engagement and comments trend
+- **Stacked Column Chart** – Ad type performance over time
+- **Map Visual** – Country-wise engagement and comments
+- **Calendar Heatmap** – Monthly engagement activity
+---`
+
+## 🔍 Key Insights
+- Instagram outperforms Facebook in engagement
+- Video ads drive the highest interaction and comments
+- Engagement is highest during evening hours
+- Certain age groups contribute most to purchases
+- Higher engagement leads to better conversion rates
+
+---
+
+## 🔮 Future Improvements
+- Predictive modeling for purchase conversion
+- ROI analysis by ad type and campaign
+- Real-time data integration using APIs
+- Automated campaign performance alerts
+
+---
